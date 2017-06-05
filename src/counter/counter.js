@@ -31,4 +31,26 @@ class Counter extends Component {
         );
     }
 }
+
+class  CounterTest extends Component{
+    render(){
+        return(<div>
+            <Counter1 initValue="123" />
+
+        </div>)
+    }
+}
+
+class Counter1 extends Component{
+    constructor(props) {
+        super(props);
+    }
+    render(){
+        return (<div>
+            <input defaultValue ={ this.props.initValue}/>
+        </div>)
+    }
+
+}
 export  default Counter;
+export {CounterTest};
