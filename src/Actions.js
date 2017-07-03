@@ -3,17 +3,16 @@
  * 实现Action
  */
 import * as ActionType from 'ActionType';
-import  AppDispatcher from 'AppDispatcher';
 
 export const add = (click)=>{
-    AppDispatcher.dispatch({
+  return {
         type:ActionType.ADD,
         click:click
-    })
+    };
 }
 export const del = (click)=>{
-    AppDispatcher.dispatch({
+    return{
         type:ActionType.DEL,
         click:click
-    })
+    };
 }
