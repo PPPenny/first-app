@@ -34,9 +34,10 @@ class Counter1 extends Component{
         return(
             <div>
                 <button  onClick={this.onAdd}>-</button>
-                <input value={value}  onChange={this.onChange}/>
+                <input value={this.value}  onChange={this.onChange}/>
                 <button  onClick={this.onDel}>+</button>
             </div>
         )
     }
 }
+// export {Counter1}
