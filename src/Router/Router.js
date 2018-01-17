@@ -15,13 +15,17 @@ const PrimaryLayout = () =>
     </ul>
     <main>
       <Route path="/" exact component={ShowTime} />
-      <Route path="/user" component={Parent} />
+      <Route path="/User" component={Parent} />
     </main>
   </div>
 
-const RouteDemo = () =>
-  <BrowserRouter>
+const RouteDemo = () =>{
+  return(
+    <BrowserRouter>
     <PrimaryLayout />
-  </BrowserRouter>;
+  </BrowserRouter>
+  )
+}
+
 
   export default RouteDemo;
